@@ -37,7 +37,7 @@ jobs:
       run: mvn --batch-mode -Dmaven.test.failure.ignore=true test
 
     - name: STEP-6 - Publish Test Report
-      uses: kumvijaya/junit-report@main
+      uses: vinoth-ramasamy/junit-report@main
       if: success() || failure() # always run even if the previous step fails
       with:
         report_paths: '**/target/surefire-reports/TEST-*.xml'   # Path to test results
