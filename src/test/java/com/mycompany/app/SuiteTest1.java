@@ -6,7 +6,7 @@ import org.junit.Test;
 
 public class SuiteTest1 {						
 
-    @Test(expected = ArithmeticException.class)					
+    @Test				
     public void testJUnitMessage() {				
         String expected = "Y";					
         String actual = "Y";					

@@ -15,7 +15,7 @@ public class App {
     }
 
     public String getMessage() throws Exception {
-         Thread.sleep(5000);
+         Thread.sleep(2000);
         return MESSAGE;
     }
 }
