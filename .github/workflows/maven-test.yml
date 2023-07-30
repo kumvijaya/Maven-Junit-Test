@@ -37,6 +37,7 @@ jobs:
       run: |
         mvn --batch-mode -Dmaven.test.failure.ignore=true test
         ls target
+        ls target/surefire-reports
 
     - name: STEP-6 - Publish Test Report
       uses: vinoth-ramasamy/junit-report@main
