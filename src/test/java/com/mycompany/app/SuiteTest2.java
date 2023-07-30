@@ -14,7 +14,18 @@ public class SuiteTest2 {
         String actual = "Y";					
 
         Assert.assertEquals(expected, actual);					
-        System.out.println("Suite Test 1 is successful " + actual);							
+        System.out.println("Suite Test 2a is successful " + actual);							
+    }	
+
+    @Test		
+    public void createAndSetName2() {					
+        		
+
+        String expected = "Y";					
+        String actual = "Y";					
+
+        Assert.assertEquals(expected, actual);					
+        System.out.println("Suite Test 2b is successful " + actual);							
     }		
 
 }		
