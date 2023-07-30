@@ -34,7 +34,9 @@ jobs:
       run: mvn clean install
 
     - name: STEP-5 - JUNIT Test with Maven
-      run: mvn --batch-mode -Dmaven.test.failure.ignore=true test
+      run: |
+        mvn --batch-mode -Dmaven.test.failure.ignore=true test
+        ls target
 
     - name: STEP-6 - Publish Test Report
       uses: vinoth-ramasamy/junit-report@main
