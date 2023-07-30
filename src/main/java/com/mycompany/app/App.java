@@ -1,4 +1,5 @@
 package com.mycompany.app;
+import java.lang.Thread;
 
 /**
  * Hello world!
@@ -13,7 +14,8 @@ public class App {
         System.out.println(MESSAGE);
     }
 
-    public String getMessage() {
+    public String getMessage() throws Exception {
+         Thread.sleep(5000);
         return MESSAGE;
     }
 }

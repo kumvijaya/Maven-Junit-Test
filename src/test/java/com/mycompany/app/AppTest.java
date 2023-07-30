@@ -13,13 +13,30 @@ public class AppTest
     public void testAppConstructor() {
         App app1 = new App();
         App app2 = new App();
-        assertEquals(app1.getMessage(), app2.getMessage());
+        String message1 = null;
+        String message2 =  null;
+        try{
+            message1 = app1.getMessage();
+            message2 = app2.getMessage();
+        }
+        catch(Exception e){
+            System.out.println(e.getMessage());
+        }
+        assertEquals(message1, message2);
     }
 
     @Test
     public void testAppMessage()
     {
         App app = new App();
-        assertEquals("Hello World!", app.getMessage());
+        String message1 = null;
+        try{
+
+            message1 = app.getMessage();
+        }catch(Exception e){
+            System.out.println(e.getMessage());
+        }
+        
+        assertEquals("Hello World!", message1);
     }
 }
