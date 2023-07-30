@@ -3,7 +3,7 @@ package com.mycompany.app;
 import org.junit.Assert;		
 import org.junit.Test;		
 
-public class SuiteTest2 {				
+public class Test2 {				
    	
 
     @Test		
@@ -14,7 +14,7 @@ public class SuiteTest2 {
         String actual = "Y";					
 
         Assert.assertEquals(expected, actual);					
-        System.out.println("Suite Test 2a is successful " + actual);							
+        // System.out.println("Suite Test 2a is successful " + actual);							
     }	
 
     @Test		
@@ -25,7 +25,7 @@ public class SuiteTest2 {
         String actual = "Y";					
 
         Assert.assertEquals(expected, actual);					
-        System.out.println("Suite Test 2b is successful " + actual);							
+        // System.out.println("Suite Test 2b is successful " + actual);							
     }		
 
 }		
