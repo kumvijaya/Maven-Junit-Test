@@ -7,7 +7,7 @@ public class SuiteTest2 {
    	
 
     @Test		
-    public void createAndSetName() {					
+    public void testSetName() {					
         		
 
         String expected = "Y";					
@@ -18,7 +18,7 @@ public class SuiteTest2 {
     }	
 
     @Test		
-    public void createAndSetName2() {					
+    public void testSetName2() {					
         		
 
         String expected = "Y";					
